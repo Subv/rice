@@ -9,7 +9,8 @@ Rice::VM::
 VM(char * app_name)
 {
   init_stack();
-  init(1, &app_name);
+  char*  options[]  =  { "", app_name,  };
+  init(2, &options);
 }
 
 Rice::VM::
